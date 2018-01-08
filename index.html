@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+      if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+        console.log(xmlhttp.status, xmlhttp.responseText);
+      }
+    }
+    xmlhttp.open('GET', 'http://localhost:8000/api/videos');
+    xmlhttp.setRequestHeader('Authorization', 'Bearer MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEApoVry/VAcsBwH1ha/xZq
+1OTmEzXVXMVuUssyHQO35QUkQoCM0dJqAMRbR1A8Zo8V00ZVTW7Xk/WO4FC3K0zt
+DFocjwLHFtpe3cqZsan3gi0pflSZo0S4srSVLVRdwEHf0QXXFwoG6XJd99MF+JkE
+CvxM6BToxOdvRjc0kOKXbcDXWjjGLv1NgPT2AZIkQiOBpzEGv4dLA03p96uJc9JL
+oECOf+QupIUhVRcM6OSYv1wbUIfhQP+lx/DPwEcydp7ICkjwT15IguXRx/f2/5yJ
+qMiTALWwE3glG5Gsso2t3bQo7WSXTRQ9vK1htq0Ya4lcd0pZOwF2fJtKJpGsVZA5
+GMSeoGxGl8tP47ZpE/cE3mZtMAmdldkpe6tgjMq7KrSMl1InY7hVL27MIiTcVckb
+exkzvkT9IQFIak4RDEdguGdgyE3sHrxMMKxa/fbzXGHz3dtbQsegf7NBSsNzPnRX
+VtHlSjsmZKqKCPur6nMVS4FjRm85zyJcg1CK142IgvvxKRNp6cTssNSggO9c2DTi
+AZvxLKHYiJe3UvCJiJuKWx6FDhFdhmzyojylfPVtJRkfhVxdCudhLZX2O+voJExV
+jFn9pOFfzp/Ht4gzBUKfxr13TAKPqv776qhNUreIoLFt+nalFvSJFOraDIQk8F+p
+VIANnhoLcVSuG+X4XnoM7zkCAwEAAQ==');
+    xmlhttp.send();
+  </script>
+</body>
+</html>
